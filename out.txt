@@ -1,0 +1,12 @@
+I'm writing some python code for a json parser from scratch, not using the json library, sofar from my input data, i've extracted these variables:
+
+found_markers =  [('{', 0), (':', 4), ('[', 5), (',', 9), (',', 13), (',', 21), ('{', 22), (':', 26), ('}', 30), (']', 31), (',', 32), (':', 38), ('}', 42)]
+marker_list = ['{', '#', ':', '[', '#', ',', '#', ',', '#', ',', '{', '#', ':', '#', '}', ']', ',', '#', ':', '#', '}']
+string_literals = ['a', 'b', 'c', '  d e', 'a', 'b', ' b ', 'c']
+
+Definitions:
+found_markers is the index of all the following markers and where they can be found in the input {}[]:,
+marker_list is the order all these markers were found, the # symbols representing, in order, one of the extracted string_literals
+string_literals are the strings that have been found and extracted already
+
+Please write some python code to piece all of these bits together back into an object

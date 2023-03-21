@@ -1,18 +1,10 @@
-import re
-
-
-
-# Rules:
-# https://www.ietf.org/rfc/rfc4627.txt
-
-
-# Constants for the JSON parser
+# Constant Values
 
 SET_VALUES = ['false','true','null']
 VALID_WHITESPACE = [' ',' ',' ',' ']
 NUMBER_REGEX = r"-?[0-9]+(\.[0-9]+)?((e|E)(\+|-)?[0-9]+)?"
 
-# Get index of closing bracket
+# Parsing Functions
 
 def clean_whitespace(data):
     toremove = []
@@ -88,6 +80,7 @@ def get_all_markers(data):
     return (found_markers, marker_pairs)
 
 
+
 def parse_object(data_big):
 	data = data_big[1:-1]
 	stack = []
@@ -97,8 +90,10 @@ def parse_object(data_big):
 	c_key_waiting = False
 	c_InString = False
 	c_temp = None
-    i = 0 
-    while (i < len(data)):
+	
+	i = 0
+	
+	while (i < len(data)):
 		if data[i] == '"':
 			if c_InString:
 				if c_key_waiting and isinstance(c_obj,dict):
@@ -125,7 +120,7 @@ def parse_object(data_big):
 		elif data[i] == '{':
 			if not c_InString:
 				temp_closing_index = get_closer_index(data,i,'{')
-				c_val = parse_object(data[i:temp_closing_index+1]
+				c_val = parse_object(data[i:temp_closing_index+1])
 				i = temp_closing_index
 		elif data[i] == '[':
 			if not c_InString:
@@ -152,6 +147,7 @@ def parse_object(data_big):
 				break
 		else:
 			if c_InString:
+				# += NoneType and str
 				c_val += data[i]
 			else:
 				raise Exception('JSON Syntax Error')
@@ -159,6 +155,11 @@ def parse_object(data_big):
 		i += 1
 		
 	return c_obj
+
+
+
+
+
 
 
 def parse_json(data):
@@ -171,12 +172,13 @@ def parse_json(data):
 
     # for i in string_literals: marker_list[marker_list.index('#')] = i
 
-    print(f"found_markers: {found_markers}")
-    print(f"marker_list: {marker_list}")
-    print(f"string_literals: {string_literals}")
+    # print(f"found_markers: {found_markers}")
+    # print(f"marker_list: {marker_list}")
+    # print(f"string_literals: {string_literals}")
 
 
-    result = reconstruct_json(found_markers,marker_list,string_literals)
+    
+    result = parse_object(clean_data)
 
     return result
 
