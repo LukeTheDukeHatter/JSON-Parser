@@ -31,7 +31,6 @@ def parse_object(data_big,r=False):
 	c_key = None
 	c_key_waiting = False
 	c_InString = False
-	c_temp = None
 	
 	i = 0
 	while (i < len(data)):
@@ -89,7 +88,7 @@ def parse_object(data_big,r=False):
 						c_val = None
 						c_key_waiting = False
 					else:
-						raise Exception('Invalid JSON: Syntax Error')
+						raise JSONError('Invalid JSON: Syntax Error')
 				elif isinstance(c_obj,list):
 					c_obj.append(c_val)
 					c_val = None
@@ -115,10 +114,9 @@ def parse_object(data_big,r=False):
 						
 						c_val = None
 				else:
-					raise Exception('Invalid JSON: Syntax Error')
+					raise JSONError('Invalid JSON: Syntax Error')
 		i += 1
 	return c_obj
-
 
 def parse(data):
 	clean_data = clean_whitespace(data)

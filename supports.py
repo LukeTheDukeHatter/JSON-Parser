@@ -87,7 +87,7 @@ def get_all_markers(data):
             mc['"'] += 1
 
     if mc['{'] % 2 != 0 or mc['['] % 2 != 0 or mc['"'] % 2 != 0:
-        raise Exception("Invalid JSON: Unmatched brackets or quotes")
+        raise JSONError("Invalid JSON: Unmatched brackets or quotes")
 
     return found_markers
 
@@ -104,6 +104,8 @@ class Token:
     def __init__(self, token_type, value=None):
         self.type = token_type
         self.value = value
-	
-    def __str__(self):
-        return f"Token ({self.type}, {self.value})"
+    
+class JSONError(Exception):
+    def __init__(self, message):
+        self.message = message
+        super().__init__(self.message)
