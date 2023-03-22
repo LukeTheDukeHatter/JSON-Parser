@@ -8,7 +8,7 @@ SET_VALUES = {
 	'null': None
 }
 VALID_WHITESPACE = [' ',' ',' ',' ']
-VALID_CHARS = '[]{}":,truefalsnul+-e.0123456789'
+VALID_CHARS = '[]{}":,trufasnl+-e.0123456789'
 POSSIBLE_MISSED = [
     ',:',
 	':,',
