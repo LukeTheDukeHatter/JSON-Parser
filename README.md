@@ -1,6 +1,7 @@
 # JSON-Parser
 
-## Example Usage:
+## Example Usage
+
 ```python
 import jsonparser
 
