@@ -1,0 +1,15 @@
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\bin\Debug\net7.0\CSharpJSONParser.exe
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\bin\Debug\net7.0\CSharpJSONParser.deps.json
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\bin\Debug\net7.0\CSharpJSONParser.runtimeconfig.json
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\bin\Debug\net7.0\CSharpJSONParser.dll
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\bin\Debug\net7.0\CSharpJSONParser.pdb
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\obj\Debug\net7.0\CSharpJSONParser.csproj.AssemblyReference.cache
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\obj\Debug\net7.0\CSharpJSONParser.GeneratedMSBuildEditorConfig.editorconfig
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\obj\Debug\net7.0\CSharpJSONParser.AssemblyInfoInputs.cache
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\obj\Debug\net7.0\CSharpJSONParser.AssemblyInfo.cs
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\obj\Debug\net7.0\CSharpJSONParser.csproj.CoreCompileInputs.cache
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\obj\Debug\net7.0\CSharpJSONParser.dll
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\obj\Debug\net7.0\refint\CSharpJSONParser.dll
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\obj\Debug\net7.0\CSharpJSONParser.pdb
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\obj\Debug\net7.0\CSharpJSONParser.genruntimeconfig.cache
+D:\Libraries\New Desktop\Code\github\JSONParser\CSharpJSONParser\CSharpJSONParser\obj\Debug\net7.0\ref\CSharpJSONParser.dll
